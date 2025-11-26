@@ -1,0 +1,217 @@
+:root {
+    --color-principal: #0D1B2A;
+    --color-acento: #6ec5c0;
+    --color-acento-hover: #0D1B2A;
+    --color-fondo-claro: #2C3A4F;
+    --color-fondo-seccion: #678389;
+    --color-texto: #C7D4DF;
+    --color-blanco: #FAFAFA;
+    
+    --fuente-titulo: 'Georgia', serif;
+    --fuente-cuerpo: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo-claro); 
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-principal); 
+    color: var(--color-blanco);
+    padding: 30px 50px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-blanco) !important; 
+    border-bottom: none !important;
+}
+
+#TituloPrincipal {
+    font-family: var(--fuente-titulo);
+    font-size: 2.5em;
+    color: var(--color-blanco);
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-acento);
+    padding-left: 40px;
+}
+
+h2 {
+    color: var(--color-acento);
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+
+#SubPrincipal {
+    color: var(--color-texto);
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+    margin: 5px 0 5px 40px;
+}
+
+select {
+  background-color: var(--color-acento);
+  color: var(--color-blanco); 
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--color-acento-hover);
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+article#Parrafos {
+    padding: 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor-principal {
+    display: flex; 
+    align-items: flex-start; 
+    max-width: 1300px; 
+    margin: 20px auto;
+}
+
+.seccion-contenido {
+    flex: 8; 
+    padding-left: 20px;
+}
+
+main {
+    flex: 3;
+    background-color: var(--color-fondo-seccion) !important;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+main p {
+    font-weight: bold;
+    color: var(--color-principal);
+    margin: 10px 0 ;
+    text-align: center;
+}
+
+main ul {
+    list-style: square;
+    padding-left: 20px;
+    color: var(--color-principal);
+}
+
+.TextoLadito {
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.TextoLadito:hover {
+    text-decoration: underline;
+    color: var(--color-acento);
+}
+
+.TextoLadito:active {
+    color: var(--color-principal);
+}
+
+article#Parrafos a, 
+#SeccionAplicar a:not(.boton-primario) {
+    color: var(--color-acento);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+article#Parrafos a:hover,
+#SeccionAplicar a:not(.boton-primario):hover {
+    color: var(--color-blanco); 
+}
+
+article#Parrafos a:active,
+#SeccionAplicar a:not(.boton-primario):active {
+    color: var(--color-principal);
+}
+
+#SeccionAplicar {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+}
+
+#SeccionAplicar h2 {
+    color: var(--color-acento);
+    text-align: center;
+}
+
+.destacado-cta {
+    text-align: center;
+}
+
+.boton-primario {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px 10px;
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-primario:hover {
+    background-color: var(--color-acento-hover);
+    color: var(--color-blanco);
+    transform: translateY(-2px);
+}
+
+article.info-sesiones { 
+    margin: 20px 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-fondo-claro);
+    border-left: 5px solid var(--color-acento);
+}
+
+footer {
+    background-color: var(--color-principal); 
+    color: var(--color-blanco);
+    padding: 20px 40px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer a {
+    color: var(--color-fondo-seccion);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: var(--color-acento-hover);
+}

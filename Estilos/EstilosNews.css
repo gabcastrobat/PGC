@@ -1,0 +1,9 @@
+select {
+  background-color: #D2B48C; /* tono marrón claro */
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}

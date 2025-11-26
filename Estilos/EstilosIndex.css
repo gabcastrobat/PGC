@@ -1,0 +1,289 @@
+:root {
+    --color-principal: #0D1B2A;
+    --color-acento: #FAFAFA; 
+    --color-acento-hover: #a5e8e8; 
+    --color-fondo-claro: #2C3A4F; 
+    --color-fondo-seccion: #7D685B; 
+    --color-texto: #C7D4DF; 
+    --fuente-titulo: 'Georgia', serif;
+    --fuente-cuerpo: 'Arial', sans-serif;
+}
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo-claro); 
+    line-height: 1.6;
+}
+header {
+    background-color: var(--color-principal); 
+    color: var(--color-acento); 
+    padding: 30px 50px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-acento) !important;
+    border-bottom: none !important;
+}
+
+#TituloPrincipal {
+    font-family: var(--fuente-titulo);
+    font-size: 2.5em;
+    color: var(--color-acento); 
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-acento-hover); 
+    padding-left: 40px;
+}
+h2 {
+    color: var(--color-acento-hover);
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+#SubPrincipal {
+    color: var(--color-texto);
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+    margin: 5px 0 5px 40px;
+}
+select {
+    background-color: var(--color-principal);
+    color: var(--color-acento); 
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-acento-hover);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    margin-left: 40px;
+    margin-top: 20px;
+}
+article#Parrafos {
+    padding: 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+main > p#Parrafos {
+    color: var(--color-texto);
+}
+aside#asideStyle {
+    flex: 3;
+    background-color: var(--color-fondo-seccion);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+aside#asideStyle h3 {
+    color: var(--color-acento-hover);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+aside#asideStyle ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    --azul-noche: #0D1B2A;          
+    --blanco-puro: #FAFAFA;         
+    --azul-electrico: #3C6E71;      
+    --azul-nebuloso: #2C3A4F;       
+    --gris-pardo-sepia: #7D685B;    
+    --gris-fantasmal: #C7D4DF;         
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--azul-nebuloso); 
+    color: var(--gris-fantasmal); 
+    font-family: var(--fuente-base);
+}
+
+#ArticuloPrincipal {
+    text-align: justify;
+    padding: 0 20px; 
+  }
+
+#Parrafos {
+    font-size: 20px;
+    background-color: var(--azul-noche); 
+    color: var(--gris-fantasmal);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#TituloPrincipal {
+    border-radius: 5px;
+    color: var(--blanco-puro); /* Color del caballero */
+    background-color: var(--azul-noche); /* Fondo muy oscuro */
+    font-size: 45px;
+    text-align: center;
+    font-family: var(--fuente-base);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#SubPrincipal {
+    font-size: 30px;
+    font-family: var(--fuente-base);
+    color: var(--azul-electrico); /* Color para resaltar */
+    text-shadow: 1px 1px 2px var(--azul-noche); /* Sombra suave */
+    padding-left: 10px;
+}
+
+/* --- Barra Lateral (Aside) y Componentes Relacionados --- */
+aside, #asideStyle {
+    /* Fondo con el color de ruina/piedra */
+    background-color: var(--gris-pardo-sepia); 
+    border-radius: 5px;
+    padding: 1em;
+    /* Borde acentuado con el color de luz */
+    border-left: 4px solid var(--azul-electrico);
+    margin: 1em 0;
+    font-family: var(--fuente-base);
+    color: var(--azul-noche); /* Texto oscuro para contraste en sepia */
+}
+
+aside h3 {
+    /* Títulos en aside: Blanco para mejor legibilidad sobre sepia */
+    color: var(--blanco-puro); 
+}
+
+/* --- Select para Menú --- */
+select {
+    background-color: var(--gris-pardo-sepia);
+    color: var(--blanco-puro);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--azul-electrico);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* --- Enlaces (TextoLadito y ResaltadoGrande) --- */
+.TextoLadito, .ResaltadoGrande {
+    text-decoration: none;
+    color: var(--blanco-puro); /* Color base del texto */
+    transition: all 0.3s ease;
+    font-family: var(--fuente-base);
+}
+
+
+
+div > main:first-child {
+    background-color: var(--color-fondo-seccion); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div > main > main {
+    background-color: var(--color-fondo-claro); 
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.TextoLadito {
+    color: var(--color-acento); 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.TextoLadito:hover {
+    text-decoration: underline;
+    color: var(--color-acento-hover);
+}
+.TextoLadito:active {
+    color: var(--color-principal);
+}
+article#Parrafos a,
+.ResaltadoGrande {
+    color: var(--color-acento-hover); 
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+article#Parrafos a:hover,
+.ResaltadoGrande:hover {
+    color: var(--color-acento); 
+}
+article#Parrafos a:active,
+.ResaltadoGrande:active {
+    color: var(--color-principal);
+}
+article[style*="background-color: #F2BF91;"] {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--color-fondo-seccion) !important;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(13, 27, 42, 0.4); 
+    text-align: center; 
+    color: var(--color-acento); 
+}
+article[style*="background-color: #F2BF91;"] h1,
+article[style*="background-color: #F2BF91;"] h2,
+article[style*="background-color: #F2BF91;"] p {
+     color: var(--color-acento); 
+}
+section[style*="background-color: #f9f9f9"] {
+    background-color: var(--color-fondo-seccion) !important;
+    color: var(--color-acento) !important; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+section[style*="background-color: #f9f9f9"] h2,
+section[style*="background-color: #f9f9f9"] h3,
+section[style*="background-color: #f9f9f9"] ul,
+section[style*="background-color: #f9f9f9"] p {
+    color: var(--color-acento) !important;
+}
+footer {
+    background-color: var(--color-principal); 
+    color: var(--color-texto);
+    padding: 20px 40px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    text-align: center;
+}
+footer a {
+    color: var(--color-acento-hover); 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-acento); 
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: var(--color-fondo-seccion); 
+}
+footer p#Parrafos {
+    font-size: 0.9em !important;
+    color: var(--color-texto);
+    margin: 10px 0;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.ResaltadoGrande {
+    font-size: 30px;
+    color: var(--azul-electrico); /* Destacado con luz azul */
+}
+
+/* Estilo de Hover */
+a:hover {
+    color: var(--azul-noche); /* Texto oscuro sobre el fondo de luz */
+    background-color: var(--azul-electrico); /* Fondo de luz azul */
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
